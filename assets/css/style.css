@@ -4,19 +4,73 @@
     box-sizing: border-box;
 }
 
-header.navigation {
-    justify-content: center;
-    background: gray;
-    padding: 2rem;
+a.btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.5s;
 
-    & > nav.top-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        & > a.top-btn {
-            text-decoration: none;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+    &:hover {
+        text-shadow: 2px 2px 2px black;
+        color: white;
+        font-size: xx-large;
+        background: wheat;
+        padding: 1rem;
+        border-radius: 1rem;
     }
 }
+
+body {
+    height: 100dvh;
+    background: url(../img/landing-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.logo {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: black;
+
+    & > img.logo-icon {
+        height: 50px;
+    }
+}
+
+section.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+
+    & > nav.top-buttons {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    & > img.myself {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 15%;
+        border: 2px solid;
+
+        &:hover {
+            border-color: white;
+            transition: all 0.5s;
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+
+    & > nav.bottom-button {
+        gap: 5rem;
+        display: flex;
+    }
+}
+
