@@ -50,9 +50,16 @@ section.main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
     padding: 1rem;
     height: 90dvh;
+
+    & > img.me {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
 
     & > div.about-me {
         display: flex;
